@@ -1,0 +1,84 @@
+You are a senior backend + system design engineer.
+
+I have already built a FastAPI-based backend for an AI Daily Speaking Coach with the following features:
+
+Audio upload API
+Speech-to-text using Whisper
+Speech analysis (WPM, pauses, vocabulary richness)
+AI feedback generation using OpenAI
+PostgreSQL database with SQLAlchemy
+Modular structure (routes, services, models, utils)
+
+Now I want to upgrade this project to a production-grade, interview-ready system.
+
+Your task is to:
+
+Refactor & Improve Code Quality
+Ensure clean architecture (separation of concerns)
+Use dependency injection where needed
+Improve async handling
+Add proper error handling and logging
+Follow best practices for FastAPI
+Add Missing Production Features
+JWT Authentication (login/register)
+User-based session tracking
+Rate limiting (basic)
+Request validation using Pydantic
+Environment-based config (dev/prod)
+Improve Database Design
+Optimize models (users, sessions, feedback)
+Add relationships properly
+Add indexing where useful
+Include migration setup (Alembic)
+Enhance AI Pipeline
+Improve scoring system:
+Better pause detection logic
+Add filler word detection
+Add confidence scoring (basic heuristic)
+Make feedback more structured (JSON format)
+Add API Documentation
+Proper OpenAPI tags and descriptions
+Example request/response bodies
+Make it Swagger-ready
+Add System Design Level Enhancements
+Add background task support (Celery or FastAPI BackgroundTasks)
+Queue-based processing for audio analysis (simulate if needed)
+Scalable file handling structure
+Improve Project Structure
+Convert into a more production-ready structure like:
+
+app/
+api/
+core/
+services/
+models/
+schemas/
+db/
+utils/
+
+Add Developer Experience
+requirements.txt cleanup
+.env.example file
+README improvements (backend-focused)
+Logging setup (structured logs)
+Keep Everything Simple but Clean
+Do NOT overcomplicate
+Keep it understandable for interviews
+Add comments explaining key design decisions
+Final Output
+Provide updated folder structure
+Show improved code snippets (not just explanation)
+Highlight what changed and why (important for interviews)
+
+Important:
+I want this project to be something I can confidently explain in a GATE/placement/interview setting.
+
+Focus on:
+
+clarity
+scalability thinking
+real-world practices
+
+Do NOT rewrite everything blindly — improve what exists.
+
+Act like a mentor + senior engineer reviewing and upgrading my project.

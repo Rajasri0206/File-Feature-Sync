@@ -1,0 +1,115 @@
+You are a senior backend engineer and system design expert.
+
+I have already built a FastAPI backend for an AI-based Daily Speaking Coach with:
+
+Audio upload API
+Speech-to-text using OpenAI Whisper
+Speech analysis (WPM, pauses, vocabulary richness)
+AI feedback generation using OpenAI
+PostgreSQL database using SQLAlchemy
+Modular structure (routes, services, models, utils)
+
+Now I want to upgrade this into a gamified, production-ready AI speaking coach (like Duolingo for speaking skills).
+
+Your task is to extend and improve my existing project with the following:
+
+🎮 GAMIFICATION SYSTEM (CORE FEATURE)
+
+Implement:
+
+Daily streak system:
+Track current_streak, longest_streak, last_active_date
+Reset streak if user misses a day
+XP (experience points):
+Award XP based on session performance:
+Fluency score
+Vocabulary richness
+Session completion
+Level system:
+Define levels based on XP thresholds
+Badge system:
+Create badges (e.g., "7-day streak", "Fluency Master")
+Store user achievements
+Leaderboard:
+Batch/group-based ranking using XP
+Weekly leaderboard logic
+🎤 PRACTICE ENGINE
+
+Add:
+
+Daily topic generator:
+Generate topics using OpenAI based on user goal (interview, casual, etc.)
+Timer-based speaking sessions:
+Track duration and word count
+Session submission flow:
+Audio → transcription → scoring → XP update → feedback
+🔊 AI VOICE FEEDBACK
+Convert text feedback into audio (Google Assistant style)
+Use simple TTS (gTTS or OpenAI TTS)
+Return audio response along with text feedback
+👤 USER SYSTEM
+JWT Authentication:
+Register/Login endpoints
+User profile:
+Role (student/professional)
+Purpose (interview/public speaking/etc.)
+🗄️ DATABASE EXTENSION
+
+Extend schema with:
+
+user_stats:
+xp, level, current_streak, longest_streak, last_active_date
+badges, user_badges
+batches, batch_users
+Ensure proper relationships and indexing
+🔔 NOTIFICATION SYSTEM (BASIC)
+Daily reminder if user has not practiced
+Use background tasks or simple scheduler
+📊 DASHBOARD SUPPORT (API LEVEL)
+
+Create APIs for:
+
+User progress over time
+Streak info
+Leaderboard
+Performance metrics
+🏗️ ARCHITECTURE IMPROVEMENT
+
+Refactor into:
+
+app/
+api/
+core/
+services/
+models/
+schemas/
+db/
+utils/
+
+Keep code modular and clean
+Use dependency injection
+Add proper error handling and logging
+⚙️ BEST PRACTICES
+Use async where needed
+Add Pydantic validation
+Add .env configuration
+Prepare for scalability (don’t overcomplicate)
+📦 OUTPUT FORMAT
+
+Provide:
+
+Updated folder structure
+Key code snippets (not full dump)
+Database schema
+API endpoints
+Explanation of logic (important for interviews)
+
+IMPORTANT:
+
+Do NOT rewrite everything blindly — extend my current system
+Keep it simple but production-ready
+Add comments explaining decisions
+Focus on real-world backend design
+
+Goal:
+Make this project strong enough to confidently explain in interviews as a full-stack AI product with gamification and scalable backend design.
